@@ -1,7 +1,119 @@
-/* Place your CSS styles in this file */
+* {box-sizing: border-box}
 
-h1 {
-    text-align: center;
-    font-family: "Times New Roman", Times, serif;
-    font-weight: normal;
-}
+        /* Set height of body and the document to 100% to enable "full page tabs" */
+        body, html {
+
+            height: 100%;
+            margin: 0;
+            font-family: Arial;
+
+        }
+
+
+        /* TABS Generelt */
+        .tablink {
+            
+            background-color: #034f84;
+            border: 1px solid #ccc;
+            width: 100px;
+            overflow: hidden;
+            color: white;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            font-size: 17px;
+
+        }
+        
+        /*TABS NÅR DET HOVER*/
+        .tablink:hover {
+
+            background-color: #ddd;
+
+        }
+
+        /* Style the tab content (and add height:100% for full page content) */
+        .tabcontent {
+
+            display: none;
+            padding: 5%;
+            height: 100%;
+
+        }
+
+        .card:hover {
+
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
+        }
+
+        a:link {
+
+            text-decoration: none;
+
+        }
+
+        .spacing1{
+
+            margin: 25px 150px 75px 100px;
+
+        }
+
+        .spacing2{
+
+            margin: 50px 0 0;
+
+        }
+
+        h4{
+
+            color: dodgerblue;
+            font-weight: bold;
+
+        }
+
+        .pspacing{
+
+            line-height: 1.7;
+
+        }
+
+        h5.b{
+
+            font-style: italic;
+
+        }
+
+        h5{
+
+            text-decoration: overline;
+
+        }
+
+        /* Style the header */
+        .header {
+
+            text-align: center;
+
+        }
+
+        /* Style the footer */
+        footer {
+
+            background-color:#034f84;
+            padding: 3px;
+
+        }
+
+        p{
+            
+            text-align: justify;
+
+        }
+
+        .dato {
+
+            font-size: 12px;
+
+        }
