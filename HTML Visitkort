@@ -20,7 +20,7 @@
     </head>
 
     <body>
-
+    
         <!-- Full page tab -->
         <button class="tablink" onclick="openPage('Forside')" id="defaultOpen">Forside</button>
         <button class="tablink" onclick="openPage('CV')">CV</button>
