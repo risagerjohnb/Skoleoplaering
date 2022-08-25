@@ -1,10 +1,12 @@
 <!doctype html>
 
-<html>
+<html lang="da">
+<title>Visitkort</title>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Visitkort</title>
+        <!--Grundlæggende ting-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- CSS Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
@@ -15,163 +17,209 @@
         <!-- Load external CSS styles -->
         <link rel="stylesheet" href="CSSVisitkort.css">
 
-        <style>
-        * {box-sizing: border-box}
-
-        /* Set height of body and the document to 100% to enable "full page tabs" */
-        body, html {
-        height: 100%;
-        background-color: white;
-        margin: 0;
-        }
-
-        /* Style tab links */
-        .tablink {
-        background-color: #034f84;
-        color: white;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        padding: 5px 20px;
-        font-size: 17px;
-        width: 32%;
-        }
-
-        /* Style the tab content (and add height:100% for full page content) */
-        .tabcontent {
-        display: 0;
-        color: black;
-        height: 100%;
-        }
-
-        .card {
-        box-shadow: 0 10px 8px 0 rgba(0,0,0,0.2);
-        transition: 0.3s;
-        margin-left: 375px;
-        text-align: left;
-        }
-
-        .card:hover {
-        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        }
-
-        a:link {
-        text-decoration: none;
-        }
-
-        }
-
-        /* Style the header */
-        .header {
-        text-align: center;
-        }
-
-        .dato {
-        font-size: 52px;
-        }
-        </style>
     </head>
 
     <body>
-    
-        
-        
+
         <!-- Full page tab -->
         <button class="tablink" onclick="openPage('Forside')" id="defaultOpen">Forside</button>
         <button class="tablink" onclick="openPage('CV')">CV</button>
         <button class="tablink" onclick="openPage('Kontakt')">Kontakt</button>
 
-
-
-
-
-
         <!-- CV STARTER -->
-        <div id="CV" class="tabcontent">
+        <div id="CV" class="tabcontent"> 
             
-        <!-- Header -->
-        
-            <h3 style="text-align: center">Velkommen til mit CV</h3>
+            <h3 style="text-align: center">Velkommen til mit CV
+                    <a href="C:\Users\risag\Desktop\Programming stuff\VSCode Projects\CV2022.pdf" download>
+                <br><b style="color:blue">CV download</b>
+            </a> 
+            </h3>
             
-            <!-- arbejde og erfaringer -->
-            <h5>ARBEJDE OG ERFARINGER</h5>
-            <p>Aarhus Tech, Aarhus - Skoleoplæring med programmering</p>
-            <p class="dato">Dato</p>
-    
+            <!-- Informationer -->
+            <div class="spacing1">
+                <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEDfMsXth3Vbw/profile-displayphoto-shrink_800_800/0/1653377354394?e=1666828800&v=beta&t=hi2kTXJw85lH3K_0ae8hd0KprPHmFOW1fKw9jfqt8b4" width="200px" height="200px" style="float:right">
+                <h3><b>John Ballon Risager, 24 år</b></h3>
+                <p class="pspacing" style="white-space: pre;">
+Rundhøj Allé 73, 2, 3
+Højbjerg, 8270
++45 50 36 54 33
+<b>risagerjohnb@gmail.com
+www.linkedin.com/in/john-risager-409898232
+https://github.com/risagerjohnb/Skoleoplaering(Arbejder med elektronisk visitkort)</b>
+               </p>
 
-        </div>        
+                <!-- Lidt om mig og hvad jeg laver nu -->
+                <h4>Lidt om mig og hvad jeg laver nu</h4>
+                <p>Jeg bor i Danmark i 4-5 år nu og ville gerne fortsætte det.
+                Jeg er lige startet i skoleoplæring med programmering i Aarhus Tech,
+                fordi jeg gerne ville være datatekniker med speciale i programmering.</p>
+
+                <p>På nuværende tidspunkt arbejder jeg på et projekt som handler om at
+                skabe et elektronisk visitkort i HTML og CSS(Bootstrap).</p>
+            
+            
+                <!-- ARBEJDE OG ERFARINGER -->
+                <div class="spacing2">
+
+                    <h4>ARBEJDE OG ERFARINGER</h4>
+                    <h5>Aarhus Tech, Aarhus - Skoleoplæring med programmering</h5>
+                    <p class="dato">Juni 2022 - Nuværende</p>
+                    <p>Jeg er i gang med at søge på virksomheder i hele danmark som lærling.
+                    Jeg bor i Aarhus så, hvis du er interesseret eller bare har lyst til en snak,
+                    kan du godt kontakt mig altid.</p>
+
+                    <h5>Forsvaret, Ryes Kaserne - Værnepligt</h5>
+                    <p class="dato">August 2021 - November 2021</p>
+                    <p>Jeg har gennemgået fysisk træning hos Fredericia som værnepligtige.
+                    Jeg har også været på forskellige felt tur fx. Vi havde en felt tur som
+                    handler om patrulje, hvor vi skulle gå langt i mørket.</p>
+
+                    <h5>Kaiku, Aarhus - Rengøringsassistent</h5>
+                    <p class="dato">November 2020 - Juni 2021</p>
+                    <p>Jeg gjorde rent i Kaiku 2 gange om ugen. Det var et meget fleksibelt job,
+                    men jeg arbejdede typisk tidlig om morgenen.</p>
+            
+                    <h5>Aarhus Kommune, Netto Højbjerg - Sprog Praktikant</h5>
+                    <p class="dato">September 2019 - Juni 2020</p>
+                    <p>Det var en samarbejde mellem kommunen og Netto, hvor jeg skulle lære
+                    dansk i Netto. Jeg arbejdede ved kassen, tømt flaskemaskine, gjorde
+                    rent på lageret og kontrollerede datoer på produkter.</p>
+
+                    <h5>FK Distribution, Aarhus - Omdeler</h5>
+                    <p class="dato">November 2018 - Januar 2019</p>
+                    <p>Jeg afleverede aviser til huse og lejligheder op i Aarhus N.</p>  
+
+                </div>
+
+           
+                <!-- UDDANNELSE -->
+                <div class="spacing2">
+
+                    <h4>UDDANNELSE</h4>
+                    <h5>Aarhus Tech, Aarhus - GF2 Data og kommunikationsuddannelsen</h5>
+                    <p class="dato">Januar 2022 - Juni 2022</p>
+                    <p>Jeg lærte at sæt en server op, hvad en computer indeholder fx. Det kan
+                    være hvad et bundkort er eller hvad ip adresser betyder.</p>
+
+                    <h5>FGU, Aarhus - Almen Grunduddannelse 10. klasse</h5>
+                    <p class="dato">August 2020 - Juli 2021</p>
+                    <p>Det var en klasse til elever som har dansk som et andet sprog.</p>
+
+                    <h5>CLAVIS, Aarhus - Prøve i Dansk 3</h5>
+                    <p class="dato">Maj 2020 - Juni 2020</p>
+                    <p>Det er en sprogskole, hvor jeg skulle lære grundlæggende og avanceret dansk.</p>
+
+                </div>
+
+           
+                <!-- KURSER -->
+                <div class="spacing2">
+            
+                    <h4>KURSER</h4>
+                    <h5>Forsvaret, Ryes Kaserne - Førstehjælp</h5>
+                    <p class="dato">Oktober 2021 - November 2022</p>
+                    <p>Jeg lærte den meste basale førstehjælp i Forsvaret fx. Hvordan man gør
+                    hvis personen er ubevidste eller har lige tabte en finger.</p>
+
+                    <h5>Odder Højskole, Odder - Højskole</h5>
+                    <p class="dato">Februar 2018 - Maj 2018</p>
+                    <p>Jeg tegner meget, lærte nogle dansk og været på mange fysiske
+                    aktiviteter. Jeg har været på en kanoetur 2-3 dage og jeg rejste til
+                    Holland.
+                    </p>
+
+                    <h5>Hadsten Højskole, Hadsten - Højskole</h5>
+                    <p class="dato">August 2017 - November 2017</p>
+                    <p>Jeg var på mountain biking, klatring, volley, maleri og danske timer.</p>
+
+                </div>
+
+
+                <!-- Min fritidsinteresser -->
+                <div class="spacing2">
+
+                    <h4>Min fritidsinteresser</h4>
+
+                    <p>I min fritid er jeg interesseret i game development fx. Unity og unreal engine
+                    5. I unreal engine 5 prøvede jeg at lave et spil, hvor spilleren skulle prøve at
+                    ramme 5 skiver hurtigt som muligt. Jeg har også legede lidt med Blender,
+                    hvor jeg skulle prøve at lave og så animere en robot. Jeg spiller også med
+                    min akustisk guitar nogle gange fx. Det kan være musik fra et spil eller Pop
+                    generelt.</p>
+
+                </div>
+            </div>
+        </div>       
         <!-- CV SLUTTER -->
 
 
+        <!-- KONTAKT STARTER -->
 
+        <div id="Kontakt" class="tabcontent">
 
+            <h2>Send mig en besked</h2>
+            <!--Kontaktformen-->
+            <form action="https://formspree.io/f/xnqrnjzr" method="POST">
+
+                <p>Dit navn:&nbsp;&nbsp;&nbsp;
+                <input type="text" name="name"></p>
+                <p>Din e-mail:
+                <input type="text" name="mail"></p>
+                <p>Besked:&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="comment" size="50"><br><br></p>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+
+            </form>
+
+        </div>
+
+        <!-- KONTAKT SLUTTER -->
 
 
         <!-- FORSIDE STARTER -->
         <div id="Forside" class="tabcontent">
-
-        <!-- Kortet, width of card, animation left -->
-    <div class="w3-container card w3-card-4 w3-round w3-animate-left" style="width:40%;">
         
-        <header class="w3-container w3-round-large">
+            <!-- Kortet, width of card, animation left -->
+            <div class="w3-container w3-card-4 w3-round w3-animate-left" style="width:40%;">
 
-        <!-- Navn og billede -->    
-        <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEDfMsXth3Vbw/profile-displayphoto-shrink_800_800/0/1653377354394?e=1666224000&v=beta&t=onh2Xo5jFlgHjwJB2znA2W8qtdAkFqvLchGJyedCUlI" alt="billede" style="width:100px;height:100px;" align ="right"><p style="font-size:30px;margin:30px;"><b>John Risager</b></p>
-        </header>
 
-        <!-- Hvad man laver -->
-        <p style="font-size:18px">I skoleoplæring med programmering</p>
+                <!-- Navn og billede -->
+                <header class="w3-container w3-round-large" style="background-color:#034f84;color: white;">    
+                    <img src="https://media-exp1.licdn.com/dms/image/C4D03AQEDfMsXth3Vbw/profile-displayphoto-shrink_800_800/0/1653377354394?e=1666224000&v=beta&t=onh2Xo5jFlgHjwJB2znA2W8qtdAkFqvLchGJyedCUlI" 
+                    alt="billede" style="width:100px;height:100px;" align ="right"><p style="font-size:30px;margin:30px;"><b>John Risager</b></p>
+                </header>
+
+                <!-- Hvad man laver -->
+                <p style="font-size:18px">I skoleoplæring med programmering</p>
         
-        <!-- mobilnummer -->
-        <img src="https://cdn.icon-icons.com/icons2/315/PNG/256/dialer_284_34310.png" 
-        alt="mobilnummer_logo" style="width:20px;height:20px;">
-        +45 50 36 54 33
+                <!-- mobilnummer -->
+                <p><img src="https://cdn.icon-icons.com/icons2/315/PNG/256/dialer_284_34310.png" 
+                alt="mobilnummer_logo" style="width:20px;height:20px;">&nbsp+45 50 36 54 33</p>
 
-        <!-- mail adresse -->
-        <img src="https://cdn.icon-icons.com/icons2/2631/PNG/512/gmail_new_logo_icon_159149.png" 
-        alt="gmailadresse_logo" style="width:20px;height:20px;" align ="left"><a 
-        href="mailto:risagerjohnb@gmail.com">risagerjohnb@gmail.com</a>
-        
-        <!-- linkedin account -->
-        <img src="https://cdn.icon-icons.com/icons2/805/PNG/512/linkedin_icon-icons.com_65929.png" 
-        alt="gmailadresse_logo" style="width:20px;height:20px;" align ="left"><a 
-        href="mailto:www.linkedin.com/in/john-risager-409898232">www.linkedin.com/in/john-risager-409898232</a>
-        
-        <!-- Lidt om mig selv -->
-        <h3>Lidt om mig selv</h3>
-        <br><p>Jeg bor i Danmark i 4-5 år nu og ville gerne fortsætte 
-            det indtil videre. Jeg er lige startet i skoleoplæring med programmering 
-            i Aarhus Tech, fordi jeg gerne ville være datatekniker med speciale i programmering.
-            </p></br>
+                <!-- mail adresse -->
+                <p><img src="https://cdn.icon-icons.com/icons2/2631/PNG/512/gmail_new_logo_icon_159149.png" 
+                alt="gmailadresse_logo" style="width:20px;height:20px;">&nbsprisagerjohnb@gmail.com</p>
 
-            </div>
+                <!-- linkedin account -->
+                <p><img src="https://cdn.icon-icons.com/icons2/805/PNG/512/linkedin_icon-icons.com_65929.png" 
+                alt="linkedin_logo" style="width:20px;height:20px;">&nbspwww.linkedin.com/in/john-risager-409898232</p>
+        
+                <!-- Lidt om mig selv -->
+                    <h3>Lidt om mig selv</h3>
+
+                        <br><p>Jeg bor i Danmark i 4-5 år nu og ville gerne fortsætte 
+                        det indtil videre. Jeg er lige startet i skoleoplæring med programmering 
+                        i Aarhus Tech, fordi jeg gerne ville være datatekniker med speciale i programmering.
+                        </p></br>
+            </div> 
+
         </div>  
         <!-- FORSIDE SLUTTER -->                                     
-                    
     
         <!-- Load external JavaScript -->
         <script src="scripts.js"></script> 
         
-        <!-- scripts til tabs -->
-        <script>
-            
-        function openPage(pageName,elmnt,color) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-        }
-        document.getElementById(pageName).style.display = "block";
-        elmnt.style.backgroundColor = color;
-        }
-
-        // Get the element with id="defaultOpen" and click on it
-        document.getElementById("defaultOpen").click();
-        </script> 
         <!-- JS Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>  
     </body>
