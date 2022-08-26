@@ -20,14 +20,14 @@
     </head>
 
     <body>
-    
+
         <!-- Full page tab -->
         <button class="tablink" onclick="openPage('Forside')" id="defaultOpen">Forside</button>
         <button class="tablink" onclick="openPage('CV')">CV</button>
         <button class="tablink" onclick="openPage('Kontakt')">Kontakt</button>
 
         <!-- CV STARTER -->
-        <div id="CV" class="tabcontent"> 
+        <div id="CV" class="tabcontent col-12"> 
             
             <h3 style="text-align: center">Velkommen til mit CV
                     <a href="C:\Users\risag\Desktop\Programming stuff\VSCode Projects\CV2022.pdf" download>
@@ -154,9 +154,9 @@ https://github.com/risagerjohnb/Skoleoplaering(Arbejder med elektronisk visitkor
 
 
         <!-- KONTAKT STARTER -->
-
+        
         <div id="Kontakt" class="tabcontent">
-
+        
             <h2>Send mig en besked</h2>
             <!--Kontaktformen-->
             <form action="https://formspree.io/f/xnqrnjzr" method="POST">
@@ -169,7 +169,7 @@ https://github.com/risagerjohnb/Skoleoplaering(Arbejder med elektronisk visitkor
                 <input type="text" name="comment" size="50"><br><br></p>
                 <input type="submit" value="Send">
                 <input type="reset" value="Reset">
-
+                        
             </form>
 
         </div>
@@ -178,7 +178,7 @@ https://github.com/risagerjohnb/Skoleoplaering(Arbejder med elektronisk visitkor
 
 
         <!-- FORSIDE STARTER -->
-        <div id="Forside" class="tabcontent">
+        <div id="Forside" class="tabcontent col-12">
         
             <!-- Kortet, width of card, animation left -->
             <div class="w3-container w3-card-4 w3-round w3-animate-left" style="width:40%;">
@@ -212,6 +212,8 @@ https://github.com/risagerjohnb/Skoleoplaering(Arbejder med elektronisk visitkor
                         det indtil videre. Jeg er lige startet i skoleoplæring med programmering 
                         i Aarhus Tech, fordi jeg gerne ville være datatekniker med speciale i programmering.
                         </p></br>
+                        
+                        
             </div> 
 
         </div>  
